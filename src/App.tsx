@@ -11,11 +11,11 @@ function App() {
   return (
     <>
       <div id="commands-panel">
-        {commandDescriptionsData.commands.map(command =>
-          <CommandComponent command={command.command} commandMode={command.commandMode} needsDoVersion={command.needsDoVersion} />
+        {commandDescriptionsData.commands.map((command, i) =>
+          <CommandComponent command={command.command} commandMode={command.commandMode} needsDoVersion={command.needsDoVersion} key={i} />
         )}
-        {commandDescriptionsData.subsegments.reverse().map(segment =>
-          <SegmentComponent data={segment} level={1} />
+        {commandDescriptionsData.subsegments.reverse().map((segment, i) =>
+          <SegmentComponent data={segment} level={1} key={i} />
         )}
       </div>
       <div id="plan-panel">

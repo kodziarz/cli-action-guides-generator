@@ -8,11 +8,12 @@ export default function SegmentComponent({ data, level = 1 }: { data: SegmentDat
         <h3>{data.name}</h3>
         {
             data.commands ?
-                data.commands.map(commandData => {
+                data.commands.map((commandData, i) => {
                     return <CommandComponent
                         command={commandData.command}
                         commandMode={commandData.commandMode}
-                        needsDoVersion={commandData.needsDoVersion} />
+                        needsDoVersion={commandData.needsDoVersion}
+                        key={i} />
                 })
                 : null
         }
