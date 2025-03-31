@@ -1,0 +1,75 @@
+:root {
+  --segment-red-part: 40;
+  --segment-green-part: 40;
+  --segment-blue-part: 160;
+}
+
+#commands-panel {
+  width: 70%;
+  height: 100%;
+  margin: 0;
+  float: left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgb(var(--segment-red-part), var(--segment-green-part), var(--segment-blue-part));
+}
+
+#plan-panel {
+  width: 30%;
+  height: 100%;
+  margin: 0;
+  float: left;
+  background-color: red;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.code-box {
+  /* min-width: 600px; */
+  max-width: 800px;
+  margin: 5px;
+  padding: 8px;
+  background-color: #282821;
+  border-radius: 5px;
+  color: white;
+  font-size: x-large;
+  display: flex;
+}
+
+.code-box .mode {
+  flex: 3;
+  padding: 3px;
+  text-align: right;
+}
+
+.code-box .mode a {
+  font-weight: bold;
+  color: white;
+}
+
+.code-box code {
+  flex: 8;
+  display: block;
+  float: left;
+  padding: 3px;
+
+}
+
+.code-box input {
+  flex: 2;
+  display: block;
+  width: 15%;
+}
+
+.segment {
+  margin: 2px;
+  padding: 5px 5%;
+  /* border: 1px solid black; */
+  border-radius: 15px;
+  /* border-width: 5px; */
+  /* border-color: black; */
+}
+
+.segment h3 {
+  color: white;
+}
