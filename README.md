@@ -1,5 +1,5 @@
 # cli-actions-guides generator
-Project is done mainly for my classes ;). Provides simple enviroment to generate html/javascript guides to conduct some cli actions. Output file consists of two parts:
+Project is done mainly for my classes ;). Provides simple (html/react/json) enviroment to generate single-file html/javascript guides to conduct some cli actions. Output file consists of two parts:
 * commands panel - generated commands ouptu based on given [data](#commands-data-structure).
 * plan-panel - written by hand html plan 
 Main concept is to gather commands on the left panel and refferenced by e.g. html ``<a href>`` tags - clicking on it will scroll the commands panel to the refferenced command.
