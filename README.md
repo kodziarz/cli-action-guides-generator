@@ -49,7 +49,7 @@ So linking objects works in the following way:
 #### Command
 * ``command`` - cli command.
 * ``commandMode`` - required _command mode's_ ``enterModeHref`` to execute command.
-* ``needsDoVersion`` - in Cisco IOS systems commands from normal mode may be executed in other modes only with proceeded by 'do' command. This parameter enables that - I sad, I needed that for classes ;-).
+* ``needsDoVersion`` - in Cisco IOS systems commands from normal mode may be executed in other modes only with proceeded by 'do' command. This parameter enables that - I sad, I needed that for classes ;-). By default its values is true, if no commandMode is defined.
 
 #### Segment
 * ``name`` - title of the segment.
@@ -62,3 +62,6 @@ Source data files are stroed in [/src/data](src/data) Splitting source files is 
 * file [index.json](src/data/index.json) contains [Main file](#main-file-structure) attributes,
 * each file is interpreted as _segment_ data - the file name doesn't matter (only name field in its content is taken into account),
 * each folder name is interpreted as _segment_ name and all its contents are sub-_segments_.
+
+
+BTW thanks for @jaanonim for recommending vite and few tips, how to configure it.
