@@ -54,7 +54,6 @@ const objectifyCommand = ({ command, commandMode, needsDoVersion }: CommandRawDa
 }
 
 const objectifySegment = ({ name, href, commands, subsegments }: SegmentRawData, commandModesByHrefs: { [href: string]: CommandMode }): SegmentData => {
-    console.log("ObjectifySegment: ", "name: ", name, ", href: ", href);
     return {
         name,
         href,
