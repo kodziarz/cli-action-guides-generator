@@ -60,5 +60,5 @@ So linking objects works in the following way:
 ### Splitting and nesting files
 Source data files are stroed in [/src/data](src/data) Splitting source files is supported in the following way:
 * file [index.json](src/data/index.json) contains [Main file](#main-file-structure) attributes,
-* each file is interpreted as _segment_ data,
+* each file is interpreted as _segment_ data - the file name doesn't matter (only name field in its content is taken into account),
 * each folder name is interpreted as _segment_ name and all its contents are sub-_segments_.
